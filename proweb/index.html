@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Web Page Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/6/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+  
+
+  img {
+  float: right;
+  margin-left: 15px;
+  width: 200px;
+  height: 200px;  
+}
+html,body,h1,h2,h3,h4,h5,h6 {font-family:"Roboto",sans-serif}
+
+.w3-sidebar {
+  z-index:3;
+  width:250px;
+  top:43px;
+  bottom:0;
+  height:inherit;
+}
+
+.content-grid {
+  display:grid;
+  grid-template-columns:minmax(0,2fr) minmax(220px,1fr);
+  gap:24px;
+}
+
+@media (max-width:600px) {
+  .content-grid {
+    grid-template-columns:1fr;
+  }
+}
+</style>
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <nav class="w3-flex w3-theme w3-large">
+
+    <a href="#" class="w3-button w3-theme-l1">Logo</a>
+
+    <div class="w3-flex w3-hide-small">
+      <a href="http://127.0.0.1:3000/about.html?vscode-livepreview=true" class="w3-button w3-hover-white">About</a>
+      <a href="https://www.w3schools.com/" class="w3-button w3-hide-medium w3-hover-white">Partners</a>
+    </div>
+
+    <button
+    class="w3-button w3-hide-large w3-theme-l1"
+    style="margin-left:auto"
+    onclick="w3_open()"
+    title="Open Menu">
+      <i class="fa fa-bars"></i>
+    </button>
+
+  </nav>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+
+  <button
+  onclick="w3_close()"
+  class="w3-button w3-hide-large w3-display-topright w3-xlarge"
+  title="Close Menu">
+  ×
+  </button>
+
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
+
+</nav>
+
+<!-- Overlay -->
+<div class="w3-overlay w3-hide-large"
+onclick="w3_close()"
+style="cursor:pointer"
+title="Close side menu"
+id="myOverlay"></div>
+
+<!-- Main Content -->
+<main class="w3-main" style="margin-left:250px">
+
+  <section class="w3-container w3-padding-64">
+    <div class="content-grid">
+      <div>
+        <h1 class="w3-text-teal">Taylor Swift</h1>
+
+        <p>Here are Taylor Swift's top 5 songs:</p>
+
+        <img src="https://preview.redd.it/whats-the-worst-picture-youve-ever-seen-of-her-v0-hv858on0dvcg1.jpeg?width=640&format=pjpg&auto=webp&s=00ec9e17ce62c033aa9024634e351233dfdf8d96" alt="Taylor Swift" width="100" height="100">
+
+        <ol>
+          <li><a href="https://youtu.be/ic8j13piAhQ?si=Qi74i2TfSifc4GdD">Cruel Summer</a></li>
+          <li><a href="https://www.youtube.com/watch?v=e-ORhEE9VVg">Blank Space</a></li>
+          <li><a href="https://www.youtube.com/watch?v=AY9blLYMKnI">I Don't Want to Live Forever</a></li>
+          <li><a href="https://www.youtube.com/watch?v=-BjZmE2gtdo">Lover</a></li>
+          <li><a href="https://www.youtube.com/watch?v=K-a8s8OLBSE">Cardigan</a></li>
+         
+        </ol>
+
+        <p>Taylor Alison Swift (born December 13, 1989) is an American singer-songwriter widely recognized for her narrative-driven autobiographical songwriting, artistic reinventions, and monumental impact on the global music industry.</p>
+      </div>
+      
+
+  </section>
+
+  <section class="w3-container">
+    <div class="content-grid">
+      <div>
+        <h1 class="w3-text-teal">Bad Bunny</h1>
+
+        <p>Here are Bad Bunny's top 5 songs:</p>
+
+        <img src="https://akns-images.eonline.com/eol_images/Entire_Site/2020223/rs_634x1024-200323124633-634-bad-bunny-GettyImages-1170415082.jpg?fit=around%7C634:1024&output-quality=90&crop=634:1024;center,top" alt="Bad Bunny" width="100" height="100">
+
+        <ol>
+          <li><a href="https://www.youtube.com/watch?v=LxOTsiV4tkQ">LA CANCIÓN </a></li>
+          <li><a href="https://www.youtube.com/watch?v=TmKh7lAwnBI">DÁKITI </a></li>
+          <li><a href="https://www.youtube.com/watch?v=Cr8K88UcO0s">Tití Me Preguntó</a></li>
+          <li><a href="https://www.youtube.com/watch?v=saGYMhApaH8">Me Porto Bonito</a></li>
+          <li><a href="https://www.youtube.com/watch?v=4X4uckVyk9o">DtMF</a></li>
+        </ol>
+        <p>Bad Bunny is a globally famous Puerto Rican rapper, singer, and songwriter born Benito Antonio Martínez Ocasio on March 10, 1994, in Bayamón, Puerto Rico</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="w3-container w3-padding-64">
+    <div class="content-grid">
+      <div>
+        <h1 class="w3-text-teal">Drake</h1>
+
+        <p>Here are Drake's top 5 songs:</p>
+
+        <img src="https://i.pinimg.com/474x/d5/73/b6/d573b60e901bc8061431ea0566c6a376.jpg" alt="Drake" width="100" height="100">
+        <ol>
+          <li><a href="https://www.youtube.com/watch?v=kU56R-1KFLc">One Dance</a></li>
+          <li><a href="https://www.youtube.com/watch?v=xpVfcZ0ZcFM">God's Plan</a></li>
+          <li><a href="https://www.youtube.com/watch?v=DRS_PpOrUZ4">In My Feelings</a></li>
+          <li><a href="https://www.youtube.com/watch?v=uxpDa-c-4Mc">Hotline Bling</a></li>
+          <li><a href="https://www.youtube.com/watch?v=COz9lDCFHjw">Passion Fruit</a></li>
+        </ol>
+
+        <p>Aubrey Drake Graham (born October 24, 1986) is a Canadian rapper, singer, songwriter, actor, and entrepreneur who popularized R&B-infused melodic rap-singing.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer id="myFooter">
+
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>About the Creator</h4>
+
+      <p>The creators name is John Doe. He is a passionate web developer with a love for music, but he made this website to showcase the top 3 best song writers because it is a required assignment.</p>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by
+      <a href="https://www.w3schools.com/w3css/default.asp"
+      target="_blank">w3.css</a>
+      Without your help, I couldn't have done this assignment. Thank you for your help and support!
+      </p>
+    </div>
+
+  </footer>
+
+</main>
+
+<script>
+const sidebar = document.getElementById("mySidebar");
+const overlay = document.getElementById("myOverlay");
+
+function w3_open() {
+  sidebar.style.display = "block";
+  overlay.style.display = "block";
+}
+
+function w3_close() {
+  sidebar.style.display = "none";
+  overlay.style.display = "none";
+}
+</script>
+
+</body>
+</html>

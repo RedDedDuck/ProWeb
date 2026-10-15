@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Web Page Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/6/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family:"Roboto",sans-serif}
+
+.w3-sidebar {
+  z-index:3;
+  width:250px;
+  top:43px;
+  bottom:0;
+  height:inherit;
+}
+
+.content-grid {
+  display:grid;
+  grid-template-columns:minmax(0,2fr) minmax(220px,1fr);
+  gap:24px;
+}
+
+@media (max-width:600px) {
+  .content-grid {
+    grid-template-columns:1fr;
+  }
+}
+</style>
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <nav class="w3-flex w3-theme w3-large">
+
+  <a href="index.html">  <img src="logo.png" alt="Logo" style="width: 50px; height: 50px;"> </a>
+    
+
+
+ <button
+    class="w3-button w3-hide-large w3-theme-l1"
+    style="margin-left:auto"
+    onclick="w3_open()"
+    title="Open Menu">
+      <i class="fa fa-bars"></i>
+
+    </button>
+
+  </nav>
+</div>
+
+
+
+<!-- Overlay -->
+<div class="w3-overlay w3-hide-large"
+onclick="w3_close()"
+style="cursor:pointer"
+title="Close side menu"
+id="myOverlay"></div>
+
+<!-- Main Content -->
+<main class="w3-main" style="margin-left:0px">
+
+  <section class="w3-container w3-padding-64">
+    <div class="content-grid">
+      <div>
+        <h1 class="w3-text-teal">About Ƞ𝐨𝐯𝛂 ഡ𝛂𝐯𝐞</h1>
+      
+         >
+          <p style="font-size: 50px;">Ƞ𝐨𝐯𝛂 ഡ𝛂𝐯𝐞, is a simple website that was made because it was an assignment the creator needed to complete. He only had 2 days to work on it, and he didn't use ANY AI. AI was allowed but the creator decided that he wasn't going to use it.
+            Just about everyone had used AI and made their websites with it, but the creator wanted to do it himself. He wanted to see if he could do it without AI, and he did. The website is simple, but it works. The creator is proud of his work and hopes that you enjoy it.
+            Even if it is just this little bit done. </p>
+     
+
+      </div>
+
+
+    </div>
+  </section>
+ 
+
+
+</main>
+
+<script>
+const sidebar = document.getElementById("mySidebar");
+const overlay = document.getElementById("myOverlay");
+
+function w3_open() {
+  sidebar.style.display = "block";
+  overlay.style.display = "block";
+}
+
+function w3_close() {
+  sidebar.style.display = "none";
+  overlay.style.display = "none";
+}
+</script>
+
+</body>
+</html>
